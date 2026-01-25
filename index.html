@@ -25,14 +25,6 @@
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         }
-<header class="intro">
-    <h1>你好，我是 XXX</h1>
-    <p class="intro-text">
-        Hello~ 05年双子座 | ENFJ | 大四在读
-        暂时还没想好该怎么设计
-    </p>
-</header>
-
 
         h1 {
             text-align: center;
@@ -122,71 +114,45 @@
 
 .intro {
     text-align: center;
-    padding: 60px 20px 40px;
-    background: linear-gradient(180deg, #f5f8ff, #ffffff);
+    margin-top: 60px;
 }
 
-.intro-text {
+.intro-desc {
     max-width: 600px;
-    margin: 20px auto 0;
+    margin: 20px auto 30px;
     color: #555;
-    font-size: 16px;
     line-height: 1.8;
+    font-size: 16px;
 }
+
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="container intro">
     <h1>你好，我是 XXX</h1>
-<div class="toc">
-    <strong>📌 目录</strong>
-    <ul>
-        <li><a href="#journey">无聊的日记</a></li>
-        <li><a href="#hobby">兴趣爱好</a></li>
-        <li><a href="#thoughts">心得体会</a></li>
-    </ul>
+
+    <p class="intro-desc">
+        05年 | 双子座 | ENFJ
+    </p>
+
+    <div class="toc">
+        <strong>📌 目录</strong>
+        <ul>
+            <li><a href="#journey">无聊的日记</a></li>
+            <li><a href="#hobby">兴趣爱好</a></li>
+            <li><a href="#thoughts">心得体会</a></li>
+        </ul>
+    </div>
 </div>
 
+
+
+    <h2 id="journey">📖 无聊的日记</h2>
 <p>
-👉 <a href="journey.html">查看无聊的日记</a>
+    日记都在下面这个入口啦  
+    👉 <a href="journey.html">查看无聊的日记</a>
 </p>
-
-    <h2 id="journey">🌱 无聊的日记</h2>
-
-    <div class="timeline">
-
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>2026-01-17｜开始搭自己的网站</h3>
-            <p>
-                今天第一次把一个网页真正放到网上。
-                虽然只是很简单的页面，但看到它能被访问，
-                心里还是有一点成就感。
-            </p>
-        </div>
-    </div>
-
-    <div class="timeline-item">  <!-- 要是再加时间线的话，要把从div class="timeline-item"到/p /div /div整个复制下来再改内容 -->
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>2026-01-19｜毕业论文碎碎念</h3>
-            <p>
-                还在赶毕业论文，过两天要跟导师汇报！！！
-            </p>
-        </div>
-    </div>
-
-     <div class="timeline-item"> 
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>2026-01-23｜记录心情</h3>
-            <p>
-                今天是跟导师第一次汇报的日子，可是我最近两天心情真的不怎么好，而且是莫名其妙的。哎，算了，先这样吧。
-            </p>
-        </div>
-    </div>
 
 
 </div>
@@ -194,51 +160,43 @@
 
     <h2 id="hobby">🎵 我的兴趣爱好</h2>
 
-<!-- 🎭 音乐剧 -->
-<h3>🎭 音乐剧</h3>
-<div class="timeline">
+<div class="hobby-grid">
 
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h4>2026-01-24｜关于音乐剧</h4>
-            <p>
-                说来惭愧，因为《satisfied》而入坑，但其实没有完整看过任何一部音乐剧。
-            </p>
-        </div>
+    <div class="hobby-card">
+        <h3>🎭 音乐剧</h3>
+        <p class="hobby-note">
+            喜欢音乐、表演和情绪叠加在一起的感觉。
+        </p>
+        <ul>
+            <li>《Hamilton》</li>
+            <li>《悲惨世界》</li>
+        </ul>
+    </div>
+
+    <div class="hobby-card">
+        <h3>🎬 电影</h3>
+        <p class="hobby-note">
+            更偏爱讲故事的电影。
+        </p>
+        <ul>
+            <li>《肖申克的救赎》</li>
+            <li>《楚门的世界》</li>
+        </ul>
+    </div>
+
+    <div class="hobby-card">
+        <h3>📺 美剧</h3>
+        <p class="hobby-note">
+            长线叙事让我更容易投入角色成长。
+        </p>
+        <ul>
+            <li>《小谢尔顿》</li>
+            <li>《Shameless》</li>
+        </ul>
     </div>
 
 </div>
 
-<!-- 🎬 电影 -->
-<h3>🎬 电影</h3>
-<div class="timeline">
-
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h4>2026-01-24｜漫威是绝对的神！</h4>
-            <p>
-                最近都在看《X战警》和《金刚狼》的系列电影，真的好看。
-            </p>
-        </div>
-    </div>
-
-</div>
-
-<!-- 📺 美剧 -->
-<h3>📺 美剧</h3>
-<div class="timeline">
-
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h4>2025-11｜美剧成为日常陪伴</h4>
-            <p>
-                好看的美剧应该有很多，但我没怎么看过ㅜㅜ
-            </p>
-        </div>
-    </div>
 
 </div>
 
@@ -256,6 +214,7 @@
 
 </body>
 </html>
+
 
 
 
