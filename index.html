@@ -71,46 +71,7 @@
 .toc a:hover {
     text-decoration: underline;
 }
-    .timeline {
-    position: relative;
-    margin-top: 30px;
-    padding-left: 30px;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 6px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #dbe2ff;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -2px;
-    top: 6px;
-    width: 14px;
-    height: 14px;
-    background: #4f8cff;
-    border-radius: 50%;
-}
-
-.timeline-content {
-    background: #f9faff;
-    padding: 15px 20px;
-    border-radius: 8px;
-}
-
-.timeline-content h3 {
-    margin-top: 0;
-}
+    
 
 .intro {
     text-align: center;
@@ -147,93 +108,91 @@
 
     </style>
 </head>
-<body>
 
-<div class="container intro">
-    <h1>你好，我是 XXX</h1>
+   <body>
 
-    <p class="intro-desc">
-        05年 | 双子座 | ENFJ
+<div class="container">
+
+    <!-- 顶部介绍 -->
+    <div class="intro">
+        <h1>你好，我是 XXX</h1>
+
+        <p class="intro-desc">
+            05年 | 双子座 | ENFJ
+        </p>
+
+        <div class="toc">
+            <strong>📌 目录</strong>
+            <ul>
+                <li><a href="#journey">无聊的日记</a></li>
+                <li><a href="#hobby">兴趣爱好</a></li>
+                <li><a href="#thoughts">心得体会</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 心路历程入口 -->
+    <h2 id="journey">📖 无聊的日记</h2>
+    <p>
+        日记都在下面这个入口啦  
+        👉 <a href="journey.html">查看无聊的日记</a>
     </p>
 
-    <div class="toc">
-        <strong>📌 目录</strong>
-        <ul>
-            <li><a href="#journey">无聊的日记</a></li>
-            <li><a href="#hobby">兴趣爱好</a></li>
-            <li><a href="#thoughts">心得体会</a></li>
-        </ul>
-    </div>
-</div>
-
-
-
-    <h2 id="journey">📖 无聊的日记</h2>
-<p>
-    日记都在下面这个入口啦  
-    👉 <a href="journey.html">查看无聊的日记</a>
-</p>
-
-
-</div>
-
-
+    <!-- 兴趣爱好 -->
     <h2 id="hobby">🎵 我的兴趣爱好</h2>
 
-<div class="hobby-grid">
+    <div class="hobby-grid">
+        <div class="hobby-card">
+            <h3>🎭 音乐剧</h3>
+            <p class="hobby-note">
+                喜欢音乐、表演和情绪叠加在一起的感觉。
+            </p>
+            <ul>
+                <li>《Hamilton》</li>
+                <li>《悲惨世界》</li>
+            </ul>
+        </div>
 
-    <div class="hobby-card">
-        <h3>🎭 音乐剧</h3>
-        <p class="hobby-note">
-            喜欢音乐、表演和情绪叠加在一起的感觉。
-        </p>
-        <ul>
-            <li>《Hamilton》</li>
-            <li>《悲惨世界》</li>
-        </ul>
+        <div class="hobby-card">
+            <h3>🎬 电影</h3>
+            <p class="hobby-note">
+                更偏爱讲故事的电影。
+            </p>
+            <ul>
+                <li>《肖申克的救赎》</li>
+                <li>《楚门的世界》</li>
+            </ul>
+        </div>
+
+        <div class="hobby-card">
+            <h3>📺 美剧</h3>
+            <p class="hobby-note">
+                长线叙事让我更容易投入角色成长。
+            </p>
+            <ul>
+                <li>《小谢尔顿》</li>
+                <li>《Shameless》</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="hobby-card">
-        <h3>🎬 电影</h3>
-        <p class="hobby-note">
-            更偏爱讲故事的电影。
-        </p>
-        <ul>
-            <li>《肖申克的救赎》</li>
-            <li>《楚门的世界》</li>
-        </ul>
-    </div>
-
-    <div class="hobby-card">
-        <h3>📺 美剧</h3>
-        <p class="hobby-note">
-            长线叙事让我更容易投入角色成长。
-        </p>
-        <ul>
-            <li>《小谢尔顿》</li>
-            <li>《Shameless》</li>
-        </ul>
-    </div>
-
-</div>
-
-
-</div>
-
-
+    <!-- 心得体会 -->
     <h2 id="thoughts">💭 一些心得体会</h2>
     <p>
         在成长的过程中，我慢慢意识到……<br>
         你可以把你对世界、生活、学习的理解写在这里。
     </p>
 
+    <!-- 页脚 -->
     <div class="footer">
         © 2026 · 记录我自己的世界
     </div>
+
 </div>
 
 </body>
 </html>
+
 
 
 
