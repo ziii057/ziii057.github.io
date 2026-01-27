@@ -80,14 +80,12 @@
 
 .intro-desc {
     max-width: 600px;
-    margin: 20px auto 30px;
+    margin: 20px 0 30px;   /* 🔥 关键：去掉 auto */
     color: #555;
     line-height: 1.8;
     font-size: 16px;
 }
-        .intro-meta {
-    text-align: left;
-}
+    
 
     .intro h1 {
     text-align: center;
@@ -113,32 +111,6 @@
     margin-bottom: 10px;
 }
 
-.mini-timeline {
-    margin-top: 30px;
-}
-
-.mini-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.mini-date {
-    font-size: 13px;
-    color: #888;
-    min-width: 80px;
-}
-
-.mini-content {
-    background: #f9faff;
-    padding: 12px 16px;
-    border-radius: 8px;
-}
-
-.mini-content p {
-    margin: 6px 0 0;
-    font-size: 14px;
-}
 
     .media-log {
     margin-top: 30px;
@@ -170,6 +142,24 @@
     font-size: 14px;
 }
 
+.hobby-log {
+    margin-top: 12px;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+}
+
+.hobby-log-item {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.hobby-log-date {
+    color: #999;
+    margin-right: 6px;
+}
+
+
 
     </style>
 </head>
@@ -184,7 +174,7 @@
 
         <p class="intro-desc">
     05年 | 双子座 | ENFJ<br>
-    逐步建设网页中
+    逐步建设网页中...
 </p>
 
 
@@ -210,15 +200,28 @@
 
     <div class="hobby-grid">
         <div class="hobby-card">
-            <h3>🎭 音乐剧</h3>
-            <p class="hobby-note">
-                喜欢音乐、表演和情绪叠加在一起的感觉。
-            </p>
-            <ul>
-                <li>《Hamilton》</li>
-                <li>《悲惨世界》</li>
-            </ul>
+    <h3>🎭 音乐剧</h3>
+    <p class="hobby-note">
+        喜欢音乐、表演和情绪叠加在一起的感觉。
+    </p>
+
+    <ul>
+        <li>《Hamilton》</li>
+        <li>《悲惨世界》</li>
+    </ul>
+
+    <div class="hobby-log">
+        <div class="hobby-log-item">
+            <span class="hobby-log-date">2026-01-10</span>
+            <span class="hobby-log-text">《Hamilton》歌词密度极高，但情绪始终在线</span>
         </div>
+
+        <div class="hobby-log-item">
+            <span class="hobby-log-date">2025-12-02</span>
+            <span class="hobby-log-text">现场版比录音更有冲击力</span>
+        </div>
+    </div>
+</div>
 
         <div class="hobby-card">
             <h3>🎬 电影</h3>
@@ -284,6 +287,7 @@
 
 </body>
 </html>
+
 
 
 
