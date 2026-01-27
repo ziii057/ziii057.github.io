@@ -52,11 +52,12 @@
     border-radius: 8px;
     padding: 15px 20px;
     margin-bottom: 30px;
+    text-align: left;   /* 关键 */
 }
 
 .toc ul {
     margin: 10px 0 0;
-    padding-left: 20px;
+    padding-left: 18px; /* 让文字贴近小黑点 */
 }
 
 .toc li {
@@ -85,6 +86,10 @@
     line-height: 1.8;
     font-size: 16px;
 }
+        .intro-meta {
+    text-align: left;
+}
+
 
         .hobby-grid {
     display: grid;
@@ -105,6 +110,33 @@
     margin-bottom: 10px;
 }
 
+.mini-timeline {
+    margin-top: 30px;
+}
+
+.mini-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.mini-date {
+    font-size: 13px;
+    color: #888;
+    min-width: 80px;
+}
+
+.mini-content {
+    background: #f9faff;
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.mini-content p {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
 
     </style>
 </head>
@@ -117,9 +149,11 @@
     <div class="intro">
         <h1>你好，我是 XXX</h1>
 
-        <p class="intro-desc">
-            05年 | 双子座 | ENFJ
-        </p>
+        <p class="intro-desc intro-meta">
+    05年 | 双子座 | ENFJ<br>
+    逐步建设网页中
+</p>
+
 
         <div class="toc">
             <strong>📌 目录</strong>
@@ -176,6 +210,29 @@
         </div>
     </div>
 
+    <h2 id="media-log">🎞️ 近期观看 / 收听记录</h2>
+
+<div class="mini-timeline">
+
+    <div class="mini-item">
+        <span class="mini-date">2026-01-18</span>
+        <div class="mini-content">
+            <strong>《楚门的世界》</strong>
+            <p>后半段的情绪堆叠比我预想中更温和。</p>
+        </div>
+    </div>
+
+    <div class="mini-item">
+        <span class="mini-date">2026-01-10</span>
+        <div class="mini-content">
+            <strong>音乐剧《Hamilton》</strong>
+            <p>歌词密度极高，但情绪始终在线。</p>
+        </div>
+    </div>
+
+</div>
+
+
     <!-- 心得体会 -->
     <h2 id="thoughts">💭 一些心得体会</h2>
     <p>
@@ -192,6 +249,7 @@
 
 </body>
 </html>
+
 
 
 
